@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+    <module name="Project_IO" />
+    <option name="VM_PARAMETERS" value="--module-path C:\Users\deanm\.m2\repository\org\openjfx\javafx-controls\19.0.2;C:\Users\deanm\.m2\repository\org\openjfx\javafx-fxml\19.0.2;C:\Users\deanm\.m2\repository\org\openjfx\javafx-base\19.0.2;C:\Users\deanm\.m2\repository\org\openjfx\javafx-graphics\19.0.2 --add-modules javafx.controls,javafx.fxml " />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.example.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

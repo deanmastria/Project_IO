@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.UserInterface" spacing="10" padding="10">
+    <Label text="Directory Path:"/>
+    <TextField fx:id="dirPathField" promptText="Enter directory path"/>
+
+    <Label text="Source Path:"/>
+    <TextField fx:id="sourcePathField" promptText="Enter source path"/>
+
+    <Label text="Destination Path:"/>
+    <TextField fx:id="destPathField" promptText="Enter destination path"/>
+
+    <Label text="Search Query:"/>
+    <TextField fx:id="searchQueryField" promptText="Enter search query"/>
+
+    <HBox spacing="10">
+        <Button text="Display Directory Contents" onAction="#handleDisplayContents"/>
+        <Button text="Copy File" onAction="#handleCopyFile"/>
+        <Button text="Move File" onAction="#handleMoveFile"/>
+        <Button text="Delete File" onAction="#handleDeleteFile"/>
+        <Button text="Create Directory" onAction="#handleCreateDirectory"/>
+        <Button text="Delete Directory" onAction="#handleDeleteDirectory"/>
+        <Button text="Search Files" onAction="#handleSearchFiles"/>
+    </HBox>
+
+    <Label text="Output:"/>
+    <TextArea fx:id="outputArea" editable="false"/>
+</VBox>
+
+

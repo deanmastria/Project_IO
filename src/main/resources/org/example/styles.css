@@ -1,0 +1,18 @@
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: #e0e0e0;
+}
+
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+}
