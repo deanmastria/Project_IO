@@ -48,4 +48,3 @@
     <Label text="Output:"/>
     <TextArea fx:id="outputArea" editable="false"/>
 </VBox>
-

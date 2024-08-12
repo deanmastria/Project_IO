@@ -42,10 +42,13 @@ public class FileManager implements IFileManager {
     }
 
     @Override
-    public void moveFile(String sourcePath, String destPath) throws IOException {
+    public String moveFile(String sourcePath, String destPath) throws IOException {
         // Move the file from the source path to the destination path
         Files.move(Paths.get(sourcePath), Paths.get(destPath), StandardCopyOption.REPLACE_EXISTING);
         logger.log("INFO", "Moved file from " + sourcePath + " to " + destPath);  // Log the operation
+
+        // Return the destination path as a confirmation or for further use
+        return destPath;
     }
 
     @Override
@@ -90,5 +93,4 @@ public class FileManager implements IFileManager {
         return results;  // Return the list of matching file paths
     }
 }
-
 

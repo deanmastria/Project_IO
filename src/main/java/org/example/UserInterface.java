@@ -49,8 +49,8 @@ public class UserInterface {
         String sourcePath = sourcePathField.getText();  // Get the source file path from the TextField
         String destPath = destPathField.getText();  // Get the destination path from the TextField
         try {
-            fileManager.moveFile(sourcePath, destPath);  // Perform the move operation
-            outputArea.setText("File moved successfully.");  // Display success message
+            String movedTo = fileManager.moveFile(sourcePath, destPath);  // Perform the move operation and get the destination path
+            outputArea.setText("File moved successfully to: " + movedTo);  // Display the destination path in the output TextArea
         } catch (IOException ex) {
             outputArea.setText("Error moving file: " + ex.getMessage());  // Display error message
         }
@@ -96,6 +96,4 @@ public class UserInterface {
         outputArea.setText(String.join("\n", fileManager.searchFiles(dirPath, query)));  // Display the search results
     }
 }
-
-
 

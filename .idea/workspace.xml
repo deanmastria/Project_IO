@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36363327-36ab-4e68-bdd3-0089da56f553" name="Changes" comment="Annotated, running tests">
+    <list default="true" id="36363327-36ab-4e68-bdd3-0089da56f553" name="Changes" comment="Fixed logging issues, working on gui (copy delete, move file) to make it user friendly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IFileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ILogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ILogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/MainLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/MainLayout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +100,17 @@
       <updated>1723465303389</updated>
       <workItem from="1723465304466" duration="9459000" />
       <workItem from="1723477844852" duration="1203000" />
-      <workItem from="1723479064174" duration="4209000" />
+      <workItem from="1723479064174" duration="5482000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed logging issues, working on gui (copy delete, move file) to make it user friendly">
+      <option name="closed" value="true" />
+      <created>1723487555519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723487555519</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Annotated, running tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Annotated, running tests" />
+    <MESSAGE value="Fixed logging issues, working on gui (copy delete, move file) to make it user friendly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed logging issues, working on gui (copy delete, move file) to make it user friendly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
