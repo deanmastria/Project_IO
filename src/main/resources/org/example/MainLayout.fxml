@@ -3,19 +3,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.UserInterface" spacing="10" padding="10">
+<!-- VBox is the main container, holding all UI components vertically -->
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.UserInterface" spacing="10" styleClass="vbox">
+    <!-- Label and TextField for directory path input -->
     <Label text="Directory Path:"/>
     <TextField fx:id="dirPathField" promptText="Enter directory path"/>
 
+    <!-- Spacer for vertical spacing -->
+    <Region prefHeight="10"/>
+
+    <!-- Label and TextField for source path input -->
     <Label text="Source Path:"/>
     <TextField fx:id="sourcePathField" promptText="Enter source path"/>
 
+    <!-- Spacer for vertical spacing -->
+    <Region prefHeight="10"/>
+
+    <!-- Label and TextField for destination path input -->
     <Label text="Destination Path:"/>
     <TextField fx:id="destPathField" promptText="Enter destination path"/>
 
+    <!-- Spacer for vertical spacing -->
+    <Region prefHeight="10"/>
+
+    <!-- Label and TextField for search query input -->
     <Label text="Search Query:"/>
     <TextField fx:id="searchQueryField" promptText="Enter search query"/>
 
+    <!-- HBox containing buttons for various file operations -->
     <HBox spacing="10">
         <Button text="Display Directory Contents" onAction="#handleDisplayContents"/>
         <Button text="Copy File" onAction="#handleCopyFile"/>
@@ -26,8 +41,11 @@
         <Button text="Search Files" onAction="#handleSearchFiles"/>
     </HBox>
 
+    <!-- Spacer for vertical spacing -->
+    <Region prefHeight="10"/>
+
+    <!-- Label and TextArea for displaying output messages -->
     <Label text="Output:"/>
     <TextArea fx:id="outputArea" editable="false"/>
 </VBox>
-
 

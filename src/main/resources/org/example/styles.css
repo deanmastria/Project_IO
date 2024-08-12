@@ -1,6 +1,6 @@
 .root {
     -fx-background-color: #f4f4f4;
-    -fx-padding: 10;
+    -fx-padding: 10; /* Remove this if you don't want padding at all */
 }
 
 .button {
@@ -15,4 +15,8 @@
 .text-area {
     -fx-background-color: #ffffff;
     -fx-border-color: #cccccc;
+}
+
+.vbox {
+    -fx-spacing: 10; /* This will apply spacing between VBox elements */
 }
