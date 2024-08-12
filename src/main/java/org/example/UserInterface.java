@@ -3,6 +3,7 @@ package org.example;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 
 import java.io.IOException;
 
@@ -24,6 +25,13 @@ public class UserInterface {
     private TextArea outputArea;  // TextArea for displaying output messages
 
     private final FileManager fileManager = new FileManager();  // Instance of FileManager for file operations
+
+    @FXML
+    public void initialize() {
+        // Set tooltip for the outputArea programmatically
+        Tooltip outputTooltip = new Tooltip("Displays the result of operations such as directory contents, file copy status, etc.");
+        Tooltip.install(outputArea, outputTooltip);
+    }
 
     @FXML
     public void handleDisplayContents() {

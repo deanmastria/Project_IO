@@ -1,22 +1,41 @@
 .root {
     -fx-background-color: #f4f4f4;
-    -fx-padding: 10; /* Remove this if you don't want padding at all */
+    -fx-padding: 20;
 }
 
 .button {
     -fx-background-color: #2196F3;
     -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
 }
 
 .text-field {
     -fx-background-color: #e0e0e0;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
 }
 
 .text-area {
     -fx-background-color: #ffffff;
     -fx-border-color: #cccccc;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
 }
 
 .vbox {
-    -fx-spacing: 10; /* This will apply spacing between VBox elements */
+    -fx-spacing: 15; /* Increased spacing for a cleaner look */
+}
+
+.titled-pane {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-content-display: top;
+    -fx-padding: 15;
+}
+
+.titled-pane > .title {
+    -fx-background-color: #3F51B5;
+    -fx-text-fill: white;
+    -fx-padding: 10;
 }

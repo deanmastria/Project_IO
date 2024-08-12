@@ -3,48 +3,80 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<!-- VBox is the main container, holding all UI components vertically -->
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.UserInterface" spacing="10" styleClass="vbox">
-    <!-- Label and TextField for directory path input -->
-    <Label text="Directory Path:"/>
-    <TextField fx:id="dirPathField" promptText="Enter directory path"/>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.UserInterface" spacing="15" styleClass="vbox">
 
-    <!-- Spacer for vertical spacing -->
-    <Region prefHeight="10"/>
+    <!-- Section for Directory Operations -->
+    <TitledPane text="Directory Operations" expanded="true">
+        <VBox spacing="10">
+            <Label text="Directory Path:"/>
+            <TextField fx:id="dirPathField" promptText="Enter directory path"/>
+            <HBox spacing="10">
+                <Button text="Display Directory Contents" onAction="#handleDisplayContents">
+                    <tooltip>
+                        <Tooltip text="Display all files and folders in the specified directory"/>
+                    </tooltip>
+                </Button>
+                <Button text="Create Directory" onAction="#handleCreateDirectory">
+                    <tooltip>
+                        <Tooltip text="Create a new directory at the specified path"/>
+                    </tooltip>
+                </Button>
+                <Button text="Delete Directory" onAction="#handleDeleteDirectory">
+                    <tooltip>
+                        <Tooltip text="Delete the specified directory and its contents"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+        </VBox>
+    </TitledPane>
 
-    <!-- Label and TextField for source path input -->
-    <Label text="Source Path:"/>
-    <TextField fx:id="sourcePathField" promptText="Enter source path"/>
+    <!-- Section for File Operations -->
+    <TitledPane text="File Operations" expanded="true">
+        <VBox spacing="10">
+            <Label text="Source Path:"/>
+            <TextField fx:id="sourcePathField" promptText="Enter source file path"/>
+            <Label text="Destination Path:"/>
+            <TextField fx:id="destPathField" promptText="Enter destination path"/>
+            <HBox spacing="10">
+                <Button text="Copy File" onAction="#handleCopyFile">
+                    <tooltip>
+                        <Tooltip text="Copy the file from the source path to the destination path"/>
+                    </tooltip>
+                </Button>
+                <Button text="Move File" onAction="#handleMoveFile">
+                    <tooltip>
+                        <Tooltip text="Move the file from the source path to the destination path"/>
+                    </tooltip>
+                </Button>
+                <Button text="Delete File" onAction="#handleDeleteFile">
+                    <tooltip>
+                        <Tooltip text="Delete the file at the specified path"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+        </VBox>
+    </TitledPane>
 
-    <!-- Spacer for vertical spacing -->
-    <Region prefHeight="10"/>
+    <!-- Section for Search Operations -->
+    <TitledPane text="Search Files" expanded="true">
+        <VBox spacing="10">
+            <Label text="Search Query:"/>
+            <TextField fx:id="searchQueryField" promptText="Enter search query"/>
+            <Button text="Search Files" onAction="#handleSearchFiles">
+                <tooltip>
+                    <Tooltip text="Search for files in the specified directory that match the query"/>
+                </tooltip>
+            </Button>
+        </VBox>
+    </TitledPane>
 
-    <!-- Label and TextField for destination path input -->
-    <Label text="Destination Path:"/>
-    <TextField fx:id="destPathField" promptText="Enter destination path"/>
+    <!-- Section for Output Display -->
+    <TitledPane text="Operation Status &amp; Output" expanded="true">
+        <VBox spacing="10">
+            <Label text="Output:"/>
+            <!-- Removed Tooltip from here because TextArea does not support direct Tooltip attribute in FXML -->
+            <TextArea fx:id="outputArea" editable="false" wrapText="true" prefHeight="200"/>
+        </VBox>
+    </TitledPane>
 
-    <!-- Spacer for vertical spacing -->
-    <Region prefHeight="10"/>
-
-    <!-- Label and TextField for search query input -->
-    <Label text="Search Query:"/>
-    <TextField fx:id="searchQueryField" promptText="Enter search query"/>
-
-    <!-- HBox containing buttons for various file operations -->
-    <HBox spacing="10">
-        <Button text="Display Directory Contents" onAction="#handleDisplayContents"/>
-        <Button text="Copy File" onAction="#handleCopyFile"/>
-        <Button text="Move File" onAction="#handleMoveFile"/>
-        <Button text="Delete File" onAction="#handleDeleteFile"/>
-        <Button text="Create Directory" onAction="#handleCreateDirectory"/>
-        <Button text="Delete Directory" onAction="#handleDeleteDirectory"/>
-        <Button text="Search Files" onAction="#handleSearchFiles"/>
-    </HBox>
-
-    <!-- Spacer for vertical spacing -->
-    <Region prefHeight="10"/>
-
-    <!-- Label and TextArea for displaying output messages -->
-    <Label text="Output:"/>
-    <TextArea fx:id="outputArea" editable="false"/>
 </VBox>
